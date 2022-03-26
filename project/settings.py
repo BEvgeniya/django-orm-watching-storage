@@ -1,4 +1,6 @@
 import os
+from dotenv import load_dotenv
+load_dotenv()
 
 DATABASES = {
     'default': {
@@ -13,7 +15,7 @@ DATABASES = {
 
 INSTALLED_APPS = ['datacenter']
 
-SECRET_KEY = 'REPLACE_ME'
+SECRET_KEY = os . getenv ('SECRET_KEY')
 
 DEBUG = True
 
