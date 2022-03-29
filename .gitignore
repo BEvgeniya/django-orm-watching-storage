@@ -6,6 +6,8 @@ __pycache__/
 # C extensions
 *.so
 .idea
+.lock
+.toml
 # Distribution / packaging
 .Python
 build/
