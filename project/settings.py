@@ -22,7 +22,6 @@ DEBUG = debug_string = os.getenv('DEBUG').lower() == 'true'
 ROOT_URLCONF = "project.urls"
 
 env = Env()
-env.read_env()
 ALLOWED_HOSTS = env.list('ALLOWED_HOSTS')
 
 
